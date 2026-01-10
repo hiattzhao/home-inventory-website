@@ -4,14 +4,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Inventory Manager - Download</title>
+    <title>Home Inventory Manager - Free Desktop App for Linux & Windows</title>
+    <meta name="description"
+        content="Download Home Inventory Manager - a free desktop application to organize, track, and manage your home inventory with photos, categories, and powerful search. Available for Linux and Windows.">
+    <meta name="keywords"
+        content="home inventory, inventory management, home organization, asset tracking, desktop app, Linux, Windows, free software, inventory app, organize belongings">
+    <meta name="author" content="Hiatt Zhao">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hiattzhao.github.io/home-inventory-website/">
+    <meta property="og:title" content="Home Inventory Manager - Free Desktop App">
+    <meta property="og:description"
+        content="Organize and track your home inventory with photos, categories, and powerful search. Free desktop app for Linux & Windows.">
+    <meta property="og:image" content="https://hiattzhao.github.io/home-inventory-website/screenshots/main-window.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://hiattzhao.github.io/home-inventory-website/">
+    <meta property="twitter:title" content="Home Inventory Manager - Free Desktop App">
+    <meta property="twitter:description"
+        content="Organize and track your home inventory with photos, categories, and powerful search. Free desktop app for Linux & Windows.">
+    <meta property="twitter:image"
+        content="https://hiattzhao.github.io/home-inventory-website/screenshots/main-window.png">
+
+    <link rel="canonical" href="https://hiattzhao.github.io/home-inventory-website/">
+    <link rel="icon" type="image/png" href="icon.png">
     <link rel="stylesheet" href="style.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Home Inventory Manager",
+      "description": "A desktop application for managing your home inventory with photos, categories, and powerful search capabilities.",
+      "url": "https://hiattzhao.github.io/home-inventory-website/",
+      "author": {
+        "@type": "Person",
+        "name": "Hiatt Zhao",
+        "email": "hiattzhao@gmail.com"
+      },
+      "operatingSystem": ["Linux", "Windows"],
+      "applicationCategory": "UtilitiesApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "screenshot": "https://hiattzhao.github.io/home-inventory-website/screenshots/main-window.png",
+      "softwareVersion": "1.0.0",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "1"
+      }
+    }
+    </script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P65F7Z32SM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P65F7Z32SM');
+    </script>
 </head>
 
 <body>
     <header>
         <div class="container">
-            <h1>🏠 Home Inventory Manager</h1>
+            <h1>🏠 Home Inventory Manager - Free Desktop App for Home Organization</h1>
             <p class="tagline">Organize, track, and manage your home inventory with ease</p>
         </div>
     </header>
@@ -32,7 +96,8 @@
                     <div class="platform-icon">🐧</div>
                     <h3>Linux (Debian/Ubuntu)</h3>
                     <p>.deb Package</p>
-                    <a href="downloads/home-inventory-app_1.0.0-1_all.deb" class="download-btn" download>
+                    <a href="downloads/home-inventory-app_1.0.0-1_all.deb" class="download-btn" download
+                        aria-label="Download Home Inventory Manager for Linux Debian/Ubuntu (.deb package)">
                         Download .deb
                     </a>
                     <div class="requirements">
@@ -57,7 +122,8 @@ sudo apt-get install -f</pre>
                     <div class="platform-icon">🐧</div>
                     <h3>Linux (Universal)</h3>
                     <p>AppImage - Portable</p>
-                    <a href="downloads/Home_Inventory_Manager-1.0.0-x86_64.AppImage" class="download-btn" download>
+                    <a href="downloads/Home_Inventory_Manager-1.0.0-x86_64.AppImage" class="download-btn" download
+                        aria-label="Download Home Inventory Manager for Linux Universal (AppImage portable)">
                         Download AppImage
                     </a>
                     <div class="requirements">
@@ -82,7 +148,8 @@ sudo apt-get install -f</pre>
                     <div class="platform-icon">🪟</div>
                     <h3>Windows</h3>
                     <p>Standalone Executable</p>
-                    <a href="downloads/Home Inventory Manager.exe" class="download-btn" download>
+                    <a href="downloads/Home Inventory Manager.exe" class="download-btn" download
+                        aria-label="Download Home Inventory Manager for Windows (standalone executable)">
                         Download .exe
                     </a>
                     <div class="requirements">
