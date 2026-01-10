@@ -208,6 +208,11 @@ header h1 {
     font-weight: bold;
 }
 
+.macos-unavailable li::before {
+    content: "✗";
+    color: #ef4444;
+}
+
 /* Features */
 .features {
     padding: 4rem 0;
