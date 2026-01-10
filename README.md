@@ -10,7 +10,7 @@ home-inventory-website/
 ├── style.css           # Stylesheet
 ├── downloads/          # Distribution files
 │   ├── home-inventory-app_1.0.0-1_all.deb (Linux)
-│   ├── Home_Inventory_Manager.AppImage (Linux - Universal)
+│   ├── Home_Inventory_Manager-1.0.0-x86_64.AppImage (Linux - Universal)
 │   └── Home Inventory Manager.exe (Windows)
 └── README.md           # This file
 ```
@@ -57,7 +57,7 @@ Place the distribution files in the `downloads/` directory:
 cp ../home-inventory-app_1.0.0-1_all.deb downloads/
 
 # Copy Linux AppImage
-cp ../home-inventory-app/dist/Home_Inventory_Manager.AppImage downloads/
+cp ../home-inventory-app/dist/Home_Inventory_Manager-1.0.0-x86_64.AppImage downloads/
 
 # Copy Windows installer (when available)
 cp "Home Inventory Manager.exe" downloads/
