@@ -1,0 +1,468 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #2563eb;
+    --primary-dark: #1d4ed8;
+    --secondary-color: #10b981;
+    --text-dark: #1f2937;
+    --text-light: #6b7280;
+    --bg-light: #f9fafb;
+    --border-color: #e5e7eb;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.tagline {
+    font-size: 1.25rem;
+    opacity: 0.95;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.125rem;
+    color: var(--text-light);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Downloads */
+.downloads {
+    padding: 3rem 0;
+    background-color: var(--bg-light);
+}
+
+.downloads h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: var(--text-dark);
+}
+
+.download-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.download-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.download-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.platform-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.download-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+}
+
+.download-card p {
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+}
+
+.download-btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: var(--primary-dark);
+}
+
+.github-btn {
+    background-color: #24292e;
+}
+
+.github-btn:hover {
+    background-color: #1a1e22;
+}
+
+.install-info {
+    margin-top: 1.5rem;
+    text-align: left;
+}
+
+.install-info details {
+    background-color: var(--bg-light);
+    padding: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.install-info summary {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.install-info pre {
+    background-color: var(--text-dark);
+    color: #f9fafb;
+    padding: 1rem;
+    border-radius: 6px;
+    overflow-x: auto;
+    margin: 1rem 0;
+    font-size: 0.875rem;
+}
+
+.install-info p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+.requirements {
+    margin-top: 1.5rem;
+    text-align: left;
+    background-color: var(--bg-light);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.requirements h4 {
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+}
+
+.requirements ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.requirements li {
+    padding: 0.25rem 0;
+    color: var(--text-light);
+    font-size: 0.875rem;
+    padding-left: 1.25rem;
+    position: relative;
+}
+
+.requirements li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+/* Features */
+.features {
+    padding: 4rem 0;
+}
+
+.features h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: var(--text-dark);
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.feature {
+    padding: 1.5rem;
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.feature h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+}
+
+.feature p {
+    color: var(--text-light);
+}
+
+/* Screenshots */
+.screenshots {
+    padding: 4rem 0;
+    background-color: var(--bg-light);
+}
+
+.screenshots h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: var(--text-dark);
+}
+
+.screenshot-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.screenshot {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.screenshot:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.screenshot img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.screenshot-caption {
+    padding: 1rem;
+    text-align: center;
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+.screenshot-placeholder {
+    background-color: white;
+    border: 2px dashed var(--border-color);
+    border-radius: 12px;
+    padding: 4rem 2rem;
+    text-align: center;
+    color: var(--text-light);
+    font-style: italic;
+}
+
+/* System Requirements */
+.system-requirements {
+    padding: 4rem 0;
+}
+
+.system-requirements h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: var(--text-dark);
+}
+
+.requirements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.requirements-card {
+    background-color: var(--bg-light);
+    padding: 2rem;
+    border-radius: 12px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.requirements-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.requirements-card ul {
+    list-style: none;
+}
+
+.requirements-card li {
+    padding: 0.5rem 0;
+    color: var(--text-light);
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.requirements-card li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+/* FAQ */
+.faq {
+    padding: 4rem 0;
+    background-color: var(--bg-light);
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: var(--text-dark);
+}
+
+.faq-item {
+    max-width: 800px;
+    margin: 0 auto 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.faq-item details {
+    padding: 1.5rem;
+}
+
+.faq-item summary {
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: var(--text-dark);
+    cursor: pointer;
+    list-style: none;
+}
+
+.faq-item summary::marker {
+    display: none;
+}
+
+.faq-item summary::before {
+    content: "▶";
+    display: inline-block;
+    margin-right: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.faq-item details[open] summary::before {
+    transform: rotate(90deg);
+}
+
+.faq-item p {
+    margin-top: 1rem;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+.faq-item code {
+    background-color: var(--bg-light);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 0.9rem;
+}
+
+.faq-item a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.faq-item a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: var(--text-dark);
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .tagline {
+        font-size: 1rem;
+    }
+    
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+    
+    .download-cards,
+    .feature-grid,
+    .screenshot-grid {
+        grid-template-columns: 1fr;
+    }
+}
