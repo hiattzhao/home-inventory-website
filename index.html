@@ -136,7 +136,7 @@ sudo apt-get install -f</pre>
                     </div>
                     <div class="install-info">
                         <details>
-                            <summary>How to Run</summary>
+                            <summary>Installation Instructions</summary>
                             <pre>chmod +x Home_Inventory_Manager-1.0.0-x86_64.AppImage
 ./Home_Inventory_Manager-1.0.0-x86_64.AppImage</pre>
                             <p>AppImage is portable - just download and run!</p>
@@ -173,24 +173,37 @@ sudo apt-get install -f</pre>
                 <div class="download-card">
                     <div class="platform-icon">🍎</div>
                     <h3>macOS</h3>
-                    <p>Not Available</p>
-                    <div class="download-btn disabled" style="background-color: #9ca3af; cursor: not-allowed;">
-                        Not Available
-                    </div>
-                    <div class="requirements macos-unavailable">
-                        <h4>Why No macOS Version?</h4>
+                    <p>Manual Install</p>
+                    <a href="https://github.com/hiattzhao/home-inventory-app#exporting-for-macos-with-py2app"
+                        class="download-btn" target="_blank" rel="noopener noreferrer"
+                        aria-label="View manual macOS installation instructions for Home Inventory Manager">
+                        View Instructions
+                    </a>
+                    <div class="requirements">
+                        <h4>System Requirements</h4>
                         <ul>
-                            <li>Apple requires paid developer account ($99/year)</li>
-                            <li>Code signing and notarization required</li>
-                            <li>Difficult to distribute free applications</li>
+                            <li>macOS with Python 3.8 or higher</li>
+                            <li>py2app installed in your environment</li>
+                            <li>Build from source using the project setup script</li>
                         </ul>
                     </div>
                     <div class="install-info">
                         <details>
-                            <summary>More Information</summary>
-                            <p>Apple makes it difficult to release free applications without a paid developer account
-                                and code signing requirements. A macOS version may be provided in the future if there is
-                                sufficient demand.</p>
+                            <summary>Why Manual Install</summary>
+                            <div style="margin-top: 0.5rem; display: flex; flex-direction: column; gap: 0.4rem;">
+                                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                    <span style="color: #dc2626; font-size: 1.1rem;">✗</span>
+                                    <span>Apple requires paid developer account ($99/year)</span>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                    <span style="color: #dc2626; font-size: 1.1rem;">✗</span>
+                                    <span>Code signing and notarization required</span>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                    <span style="color: #dc2626; font-size: 1.1rem;">✗</span>
+                                    <span>Difficult to distribute free applications</span>
+                                </div>
+                            </div>
                         </details>
                     </div>
                 </div>
